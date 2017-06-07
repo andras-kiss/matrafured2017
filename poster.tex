@@ -1,0 +1,22 @@
+\documentclass[margin=10pt]{standalone}
+\usepackage{pst-electricfield}
+\usepackage{pst-all}
+\usepackage{pstricks-add}
+
+\begin{document}
+
+
+\begin{pspicture*}(-12,2)(10,20)
+\psframe*[linecolor=lightgray!40](-12,2)(10,20)
+%\psgrid[subgriddiv=0,gridcolor=lightgray,griddots=10]
+%\psElectricfield[Q={[600 -60 0 false][-4 0 0] },N=50,points=500,runit=0.8]
+\psElectricfield[Q={[-1 -2 2][1 2 2]},linecolor=black, N=50]
+
+%\psEquipotential[Q={[600 -60 0 false][-4 0 0]},linecolor=blue,Vmax=100,Vmin=50,stepV=2](-10,-5)(6,5)
+
+%\rput(0,0){\textcolor{white}{\large$-$}}
+%\multido{\rA=4.75+-0.5}{20}{\rput(-9.75,\rA){\textcolor{white}{\large$+$}}}
+\end{pspicture*}
+
+
+\end{document}
